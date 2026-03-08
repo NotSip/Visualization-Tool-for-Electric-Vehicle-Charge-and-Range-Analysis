@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EV India</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #eef1ff;
+        color: #333;
+      }
+      .navbar {
+        background: #1a1a1a;
+        border-bottom: 3px solid #b1b2ff;
+      }
+      .nav-link {
+        font-weight: 500;
+        color: #fff !important;
+        margin: 0 10px;
+        transition: 0.3s;
+      }
+      .nav-link:hover {
+        color: #b1b2ff !important;
+      }
+      .navbar-brand {
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #b1b2ff !important;
+      }
+      .footer {
+        background: #1a1a1a;
+        color: #888;
+        padding: 40px 0;
+        margin-top: 60px;
+      }
+      .card {
+        border: none;
+        border-radius: 12px;
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .btn-primary {
+        background: linear-gradient(90deg, #b1b2ff, #aac4ff);
+        border: none;
+        font-weight: 600;
+        padding: 12px 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="/">EV INTELLIGENCE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/story">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dashboard">Dashboard</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer text-center">
+      <div class="container">
+        <p>Developed for Experimental Learning Program</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
